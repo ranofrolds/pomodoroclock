@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Clock</title>
+    <link rel="icon" href="/preview.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="main()">
+    <div class="page-landing">
+      <div class="background">
+        <div class="menu">
+          <div class="timer">
+            <input id="timer" type="text" value="25:00" readonly />
+          </div>
+          <div class="botoes">
+            <button id="start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path d="M3 22v-20l18 10-18 10z" />
+              </svg>
+            </button>
+            <button id="pause">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z" />
+              </svg>
+            </button>
+            <button id="reset">Reset</button>
+          </div>
+          <div class="custom">
+            <div class="minutes">
+            <button id="minus">-</button>
+            <input id="time" type="text" value="25" readonly />
+            <button id="plus">+</button>
+            </div>  
+            <div class="dark-mode">
+              <label class="switch">
+                <input id="mode" type="checkbox" value="false"/>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
